@@ -1,0 +1,12 @@
+./data/*
+!./data/.gitkeep
+*.wav
+*.mp3
+*.npy
+*.pkl
+*.png
+*pycache*
+
+.smbdelete*
+__pycache__/
+*.pyc

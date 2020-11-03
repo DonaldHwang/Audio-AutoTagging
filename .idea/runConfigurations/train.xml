@@ -1,0 +1,21 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="train" type="PythonConfigurationType" factoryName="Python">
+    <module name="audiotagging2019" />
+    <option name="INTERPRETER_OPTIONS" value="" />
+    <option name="PARENT_ENVS" value="true" />
+    <option name="SDK_HOME" value="sftp://falconr1@cs-181:22/m/home/home7/77/falconr1/unix/.conda/envs/audio/bin/python3.7" />
+    <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/poc/augmentationPaper" />
+    <option name="IS_MODULE_SDK" value="false" />
+    <option name="ADD_CONTENT_ROOTS" value="true" />
+    <option name="ADD_SOURCE_ROOTS" value="true" />
+    <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+    <option name="SCRIPT_NAME" value="$PROJECT_DIR$/poc/augmentationPaper/train.py" />
+    <option name="PARAMETERS" value="--debug_mode --tensorboard --clip_grad 3 --scheduler steplr --optimizer sgd --lr 0.1 --warmup 15 --dataset SpeechCommands --dataset_path /m/cs/work/falconr1/datasets/speechCommands --dataset_tags 50 --prefetch_files --trim_audio_pre 59049 --original_fs 16000 --new_fs 16000 --use_mels 1 --max_length_frames 128 --data_limit 4000 --batch_size 8 --num_workers 0 --num_epochs 40 --model SampleCNN --max_pool 2,2 2,2 2,2 3,3 4,4 --filters_num 128 128 128 256 256 256 256 256 256 512 512" />
+    <option name="SHOW_COMMAND_LINE" value="true" />
+    <option name="EMULATE_TERMINAL" value="false" />
+    <option name="MODULE_MODE" value="false" />
+    <option name="REDIRECT_INPUT" value="false" />
+    <option name="INPUT_FILE" value="" />
+    <method v="2" />
+  </configuration>
+</component>
